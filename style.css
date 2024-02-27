@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(232, 222, 208);
+}
+
+.header
+{
+    padding: 20px;
+    text-align: center;
+    background-color: #07c226;
+    color: whitesmoke;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+
+.main{
+    flex-grow: 1;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: px;
+    width: 90%;
+    max-width: 1024px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.top_card{
+    background-color:#07c226;
+    color: white;
+    padding: 10px 20px;
+    min-width: 400px;
+}
+
+
+.top_card p{
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.top_card h3{
+    font-size: 2rem;
+}
+
+.form{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.radio {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+input{
+    padding: 5px 10px;
+}
+
+.btn{
+    width:100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color:#07c226;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #07c226;
+}
+
+
+ul {
+    list-style: none;
+    width: 400px;
+}
+
+label{
+    display: block;
+    align-self: center;
+}
+
+
+.radio_group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.transaction{
+    margin: 10px 0;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.income{
+    background-color:#07c226
+}
+
+.expense{
+    background-color: #E6425E;
+}
+
+.transaction .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.link{
+    background: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover{
+    color: #d1f3ff;
+}
+
+.right p {
+    font-size: 1.3rem;
+}
+
+.red {
+    background-color:#E6425E !important;
+}
+
+#cancel_edit{
+    display: none;
+    margin-top: 10px;
+    background-color:#ff002b !important;
+}
+
+#cancel_edit:hover{
+    background-color:#aa001c !important;
+}
+
+.second_heading{
+    margin-top: 10px;
+    text-align: left;
+}
+
+@media (max-width: 450px) {
+    .top_card, .form{
+        min-width: 90%;
+        width: 90%;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: stretch;
+    }
+
+    label{
+        align-self: flex-start;
+        margin-bottom: 5px;
+    }
+
+    .conatiner_of_list_of_transactions{
+        width: 90vw;
+    }
+
+    ul{
+        width: 90vw;
+    }
+
+    .transaction{
+        width: 90%;
+        margin: 10px auto;
+        
+    }
+
+    *{
+        font-size: 95% !important;
+    }
+}
